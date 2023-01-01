@@ -94,3 +94,13 @@ services:
     - 5000:5000
     networks:
       - monitor
+  
+  nodejs:
+    image: christianheimke/demo-backend-nodejs:001
+    container_name: nodejsAmir
+    environment:
+    - PORT=5000
+    ports:
+    - 5000:5000
+    networks:
+      - monitor    
